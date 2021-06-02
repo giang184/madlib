@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>A return letter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Fill in the blanks to get a card addressed to you!</h1>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="person1">Your name</label>
+          <input id="person1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="number1">Age</label>
+          <input id="number1" class="form-control" type="number">
+        </div>
+        <div class="form-group">
+          <label for="phrase">What would you like to say?</label>
+          <input id="phrase" class="form-control" type="text">
+        </div>
+        
+        <button type="submit" class="btn">Send me the message!</button>
+      </form>
+    </div>
+
+    <div id="message">
+      <h1>A feedback message!</h1>
+      <p>
+        Hi, <span class="person1"></span>. We know you are <span class="number1"></span>, years old. The message you want us to send is: <span class="phrase"></span>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
